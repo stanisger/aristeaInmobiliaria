@@ -1,0 +1,31 @@
+body{
+	font-family: 'Ubuntu', sans-serif;
+     font-family: 'Roboto', sans-serif;
+}
+.navbar{
+	height: 90px;
+	background: white;
+	@media (min-width: 992px) {
+       height: 164px;
+	}
+
+}
+
+// Eyectacher
+.carousel-inner{
+	margin-top: 90px;
+	@media (min-width: 992px) {
+		margin-top: 164px;
+	}
+
+	.item{
+		height: 74vh;
+		min-height: 680px;
+	}
+	.item:nth-child(1){
+		background: url(assets/img/eyecatcherBg.jpg) center;
+		@include cover; 
+	}
+}
+
+
