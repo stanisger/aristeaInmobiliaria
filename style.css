@@ -272,6 +272,62 @@ footer {
       height: 482px; }
       .second article {
         width: 74%; } }
+  .second .groupTitle {
+    width: 400px;
+    transform: skew(-22deg, -4deg);
+    -ms-transform: skew(-10deg, 0deg);
+    -webkit-transform: skew(-22deg, -4deg);
+    margin: 0 auto;
+    position: absolute;
+    right: 7%;
+    top: 20%; }
+    .second .groupTitle h2 {
+      margin-top: -20px; }
+    .second .groupTitle h1 {
+      margin: 20px 0; }
+    @media (max-width: 992px) {
+      .second .groupTitle {
+        width: 220px;
+        right: 10%;
+        top: 15%; } }
+    @media (max-width: 768px) {
+      .second .groupTitle {
+        width: 220px;
+        right: 15%;
+        top: 15%; } }
+    @media (max-width: 420px) {
+      .second .groupTitle {
+        width: 220px;
+        right: -36px;
+        top: 15%; }
+        .second .groupTitle h1 {
+          margin: 10px 0; } }
+  .second p {
+    text-align: right;
+    transform: skew(-22deg, -4deg);
+    -ms-transform: skew(-10deg, 0deg);
+    -webkit-transform: skew(-22deg, -4deg);
+    position: absolute;
+    top: 320px;
+    width: 380px;
+    right: 8%; }
+    @media (max-width: 992px) {
+      .second p {
+        right: 17%;
+        width: 220px;
+        top: 190px; } }
+    @media (max-width: 768px) {
+      .second p {
+        right: 22%;
+        width: 60%;
+        top: 170px; } }
+    @media (max-width: 420px) {
+      .second p {
+        width: 220px;
+        right: 0;
+        top: 160px; }
+        .second p h1 {
+          margin: 10px 0; } }
 
 .third {
   height: 882px;
@@ -562,6 +618,15 @@ footer {
   border-image: linear-gradient(to right, #020100 8%, #020100 8%, #ffffff 8%, #ffffff 92%, #050202 92%, #050202 92%);
   border-image-slice: 1; }
 
+.boxRed {
+  height: height;
+  margin: auto;
+  border: 1px solid transparent;
+  -moz-border-image: -moz-linear-gradient(left, #020100 8%, #020100 8%, #b4072a 8%, #b4072a 92%, #050202 92%, #050202 92%);
+  -webkit-border-image: -webkit-linear-gradient(left, #020100 8%, #020100 8%, #b4072a 8%, #b4072a 92%, #050202 92%, #050202 92%);
+  border-image: linear-gradient(to right, #020100 8%, #020100 8%, #b4072a 8%, #b4072a 92%, #050202 92%, #050202 92%);
+  border-image-slice: 1; }
+
 .containerFluid {
   width: 100%;
   margin: 0 auto; }
@@ -614,7 +679,7 @@ footer {
 
 .text {
   line-height: 28px;
-  font-size: 16px; }
+  font-size: 14px; }
   .text a {
     color: #b4072a; }
   .text strong {
@@ -684,7 +749,7 @@ footer {
   color: #a9a8ab !important; }
 
 .ColorBlack {
-  color: #0d1a2d; }
+  color: #000000; }
 
 .transparent {
   background: transparent; }
@@ -699,7 +764,7 @@ footer {
   background: #a9a8ab; }
 
 .bgBlack {
-  background: #0d1a2d !important; }
+  background: #000000 !important; }
 
 .bgBlackOne {
   background: #000000 !important; }

@@ -10,3 +10,14 @@
 
     border-image-slice: 1;
   }
+
+.boxRed{
+    height: height;
+    margin: auto;
+    border: 1px solid transparent;
+    -moz-border-image:-moz-linear-gradient(left,  #020100 8%, #020100 8%, #b4072a 8%, #b4072a 92%, #050202 92%, #050202 92%);
+    -webkit-border-image: -webkit-linear-gradient(left,  #020100 8%,#020100 8%,#b4072a 8%,#b4072a 92%,#050202 92%,#050202 92%);
+    border-image: linear-gradient(to right,  #020100 8%,#020100 8%,#b4072a 8%,#b4072a 92%,#050202 92%,#050202 92%);
+
+    border-image-slice: 1;
+  }

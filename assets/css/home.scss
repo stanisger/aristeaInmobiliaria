@@ -91,8 +91,72 @@
 	  	article{
 	  		width: 74%;
 	  	}
-
 	  }
+    .groupTitle{
+    	width: 400px;
+    	transform:skew(-22deg, -4deg);
+		-ms-transform:skew(-10deg, 0deg);
+		-webkit-transform:skew(-22deg, -4deg); 
+		margin: 0 auto;
+		position: absolute;
+		right: 7%;
+		top: 20%;
+		h2{
+			margin-top: -20px;
+		}
+		h1{
+			margin: 20px 0;
+		}
+		@media (max-width: 992px) {
+	         	width: 220px;
+	         	right: 10%;
+				top: 15%;
+
+	         }
+	         @media (max-width: 768px) {
+	         	width: 220px;
+	         	right: 15%;
+				top: 15%;
+
+	         }
+			      @media (max-width: 420px) {
+			      	width: 220px;
+			      	right: -36px;
+			      	top: 15%; 
+			      	h1{
+			      		margin: 10px 0;
+			      	}
+		      }
+    }
+  	p{
+  		text-align: right;
+  		transform:skew(-22deg, -4deg);
+		-ms-transform:skew(-10deg, 0deg);
+		-webkit-transform:skew(-22deg, -4deg); 
+		position: absolute;
+		top: 320px;
+		width: 380px;
+		right: 8%;
+		@media (max-width: 992px) {
+			right: 17%;
+			width: 220px;
+			top: 190px;
+
+		}
+		@media (max-width: 768px) {
+			right: 22%;
+			width: 60%;
+			top: 170px;
+		}
+		@media (max-width: 420px) {
+		      	width: 220px;
+		      	right:0;
+		      	top: 160px; 
+		      	h1{
+		      		margin: 10px 0;
+		      	}
+	      }
+  	}
 
 }
 
