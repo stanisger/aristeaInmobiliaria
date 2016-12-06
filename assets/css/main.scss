@@ -6,14 +6,18 @@
 @import 'assets/css/prettyPhoto.css';
 @import 'assets/css/style.css';
 @import 'assets/css/animate.css';
-@import 'assets/css/owl.carousel.css';
+
 
 
 // scss
 @import 'mixins';
 @import 'variables';
 @import 'interface';
+@import 'home';
+
+
 @import 'btns';
+@import 'boder';
 
 //helpers
 @import 'helpers';

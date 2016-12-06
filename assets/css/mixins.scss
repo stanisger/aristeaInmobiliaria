@@ -68,3 +68,19 @@
   -webkit-transform: translate(-50%);
   transform: translate(-50%);
 }
+
+@mixin animation-delay($animate-delay) {
+    -moz-animation-delay: $animate-delay;
+    -o-animation-delay: $animate-delay;
+    -ms-animation-delay: $animate-delay;
+    -webkit-animation-delay: $animate-delay;
+    animation-delay: $animate-delay;
+}
+
+@mixin animation-duration($duration) {
+    -moz-animation-duration: $duration;
+    -o-animation-duration: $duration;
+    -ms-animation-duration: $duration;
+    -webkit-animation-duration: $duration;
+    animation-duration: $duration;
+}

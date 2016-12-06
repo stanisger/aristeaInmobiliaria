@@ -1,6 +1,7 @@
 
 // Portfolio
 (function($) {
+	
 	"use strict";
 	var $container = $('.portfolio'),
 		$items = $container.find('.portfolio-item'),

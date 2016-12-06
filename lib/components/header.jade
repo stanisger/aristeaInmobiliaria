@@ -6,7 +6,8 @@ head
   meta(name='description', content='')
   meta(name='author', content='')
   link(rel='shortcut icon', href='assets/ico/favicon.ico')
-  title SOLID - Bootstrap 3 Theme
+  link(href='https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i', rel='stylesheets')
+  title Aristea Desarrollos
   // Custom styles for this template
   link(href='style.css', rel='stylesheet')
   link(href='assets/css/font-awesome.min.css', rel='stylesheet')
@@ -17,10 +18,10 @@ head
   //if lt IE 9
     script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
     script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
-  script(src='assets/js/modernizr.js')
+  script(src='assets/js/modernizr.custom.js')
 // Fixed navbar
-.navbar.navbar-default.navbar-fixed-top(role='navigation')
-  .container
+.navbar.navbar-default.navbar-fixed-top.bgBlackOne(role='navigation')
+  .containerFluid
     .navbar-header
       button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
         span.sr-only Toggle navigation
@@ -32,22 +33,14 @@ head
     .navbar-collapse.collapse.navbar-right
       ul.nav.navbar-nav
         li.active
-          a(href='index.html') HOME
+          a(href='desarrollos-inmobiliarios.html') DESARROLLO INMOBILIARIO 
         li
-          a(href='about.html') ABOUT
+          a(href='comercializacion.html') COMERCIALIZACIÓN
         li
-          a(href='contact.html') CONTACT
-        li.dropdown
-          a.dropdown-toggle(href='#', data-toggle='dropdown')
-            | PAGES 
-            b.caret
-          ul.dropdown-menu
-            li
-              a(href='blog.html') BLOG
-            li
-              a(href='single-post.html') SINGLE POST
-            li
-              a(href='portfolio.html') PORTFOLIO
-            li
-              a(href='single-project.html') SINGLE PROJECT
+          a(href='contruccion.html') CONSTRUCCIÓN
+        li
+          a(href="quienes-soms")  ¿QUIÉNES SOMOS?
+        li
+          a(href="conatacto") CONTACTO
     // /.nav-collapse
+body

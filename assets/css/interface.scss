@@ -1,31 +1,218 @@
 body{
-	font-family: 'Ubuntu', sans-serif;
-     font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
+     overflow-x: hidden; 
 }
 .navbar{
+	-webkit-box-shadow: 1px 1px 10px -2px rgba(0,0,0,0.28);
+	-moz-box-shadow: 1px 1px 10px -2px rgba(0,0,0,0.28);
+	box-shadow: 1px 1px 10px -2px rgba(0,0,0,0.28);
 	height: 90px;
 	background: white;
 	@media (min-width: 992px) {
-       height: 164px;
+       height: 127px;
+	}
+	// ∆∆- logotipo -∆∆
+	.navbar-brand{
+			width: 120px;
+			@media (min-width: 992px) {
+				width: 200px;
+
+			}
+	}
+	// ∆∆- ul collapse menu -∆∆
+	.navbar-collapse{
+		background:rgba( $bgBlack, .92);
+		margin-top: 22px;
+		border-top: none;
+		@media (min-width: 768px) {
+			margin-top: 0px;
+		}
+
+	}
+
+	// ∆∆-btn menu mobile -∆∆
+	.navbar-toggle{
+      margin-top: 18px;
+      border: none;
+      &:hover{
+      	background: transparent;
+      	.icon-bar{
+      		background: $greyFont;
+      		width: 28px;
+      	}
+      }
+      	.icon-bar{
+      		background: $red;
+      		width: 28px;
+      		transition: background .4s;
+      	}
+	}
+	// body to menu
+	.nav.navbar-nav{
+		vertical-align: middle;
+		margin-top: 36px;
+		li{
+			a{
+				font-size: 14px;
+				font-weight: 300;
+				text-transform: uppercase;
+				text-align: center;
+				padding: 18px;
+				&:hover{
+					color: $red;
+				}
+				@media (min-width: 768px) {
+					padding: 9px;
+					font-size: 10px;
+
+				}
+				@media (min-width: 992px) {
+					padding: 12px;
+					font-size: 12px;
+
+				}
+				@media (min-width: 1200px) {
+					font-size: 14px;
+				}
+			}
+		}
+			.active{
+				a{
+					color: $red;
+					position: relative;
+					padding-bottom: 8px;
+					&:before{
+						content: "";
+						border-bottom: 0 solid $red;
+						width: 100%;
+						position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+        			    top: 5%; left: 0; right: 0; bottom: 0;
+        			    @media (min-width: 992px) {
+        			    	border-bottom: 1px solid $red;
+        			    }
+					}
+				}
+			}
+
 	}
 
 }
 
-// Eyectacher
+
+h1,h2,h3,h4,h6{
+	@include cero;
+}
+
+// ∆∆- Eyectacher -∆∆
+.carousel-indicators{
+	top: 0;
+	bottom: 0;
+	margin: 0 auto;
+}
 .carousel-inner{
+	background: $bgBlack;
 	margin-top: 90px;
+	height: 520px;
 	@media (min-width: 992px) {
-		margin-top: 164px;
+		margin-top: 127px;
 	}
+	@media (min-width: 768px) {
+		height: 620px;
+
+		}
+		@media (min-width: 992px) {
+			height: 680px;
+
+		}
+		@media (min-width: 1440px) {
+		   height: 85vh;
+	       min-height: 680px;
+
+		}
 
 	.item{
-		height: 74vh;
-		min-height: 680px;
+		@include animation-duration ( 1.2s);
+		height: 520px;
+		@media (min-width: 768px) {
+		height: 620px;
+
+		}
+		@media (min-width: 992px) {
+			height: 680px;
+
+		}
+		@media (min-width: 1440px) {
+		   height: 85vh;
+	       min-height: 680px;
+
+		}
+		h1{
+			@include cero;
+			padding: 12px 18px;
+		    letter-spacing: 8px;
+		    width: 243px;
+		    height: 57px;
+		    font-size: 33px;
+			position: absolute;
+			top: 35%;  left: 0; right: 0;
+			margin: auto;
+			@include animation-delay (.4s);
+			@include animation-duration ( 1.8s);
+			@media (min-width: 768px) {
+				    padding: 12px 18px;
+				    letter-spacing: 8px;
+				    width: 343px;
+				    height: 88px;
+				    font-size: 63px;
+
+			}
+			@media (min-width: 1200px) {
+			padding: 12px 18px;
+			letter-spacing: 18px;
+			width: 474px;	
+			height: 110px;
+			font-size: 79px;
+
+			}
+		}
+
 	}
 	.item:nth-child(1){
 		background: url(assets/img/eyecatcherBg.jpg) center;
 		@include cover; 
 	}
+	.item:nth-child(2){
+		background: url(assets/img/eyecatcherBg2.jpg) center;
+		@include cover; 
+	}
 }
 
+footer{
+	z-index: 2;
+	position: relative;
+	margin-top: -118px;
+	.logoFooter{
+		img{
+			width: 50%;
+		}
+	}
+	.row{
+		max-width: 420px;
+		text-align: center;
+		margin: 0 auto;
+		> div{
+			margin-top: 18px;
+		}
+		@media (min-width: 768px) {
+			max-width: 100%;
+			text-align: left;
+			> div{
+			margin-top: 0px;
+			h4{
+				margin-bottom: 9px;
+			}
+		    }   
 
+		}
+	}
+}
