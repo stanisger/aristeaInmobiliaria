@@ -4,9 +4,33 @@
 {
 	width: 100%;
 	margin: 0 auto;
-	 @media (min-width: 992px) {
-	 	width: 90%;
+	 @media (min-width: 1600px) {
+	 	width: 95%;
 	 }
+}
+.containerFluidMedium{
+	width: 100%;
+	padding: 0 18px;
+	@media (min-width: 1200px) {
+		padding: 0 24px;
+
+		}
+	@media (min-width: 1440px) {
+		width: 1440px;
+		margin: 0 auto;
+	}
+}
+.containerFluidSmall{
+	width: 100%;
+	padding: 0 18px;
+	@media (min-width: 1200px) {
+		padding: 0 24px;
+
+		}
+	@media (min-width: 920px) {
+		width: 920px;
+		margin: 0 auto;
+	}
 }
 .with100{
 	width: 100%;
@@ -46,6 +70,22 @@
 	  @media (min-width: 1200px) {
 	  	margin-bottom: 9px;
 	  	font-size: 40px;
+	  	letter-spacing: .5px;
+	  }
+
+}
+.titleMediumIn{
+	font-size: 22px;
+	margin-bottom: 5px;
+	letter-spacing:3px;
+	  @media (min-width: 992px) {
+	  	margin-bottom: 9px;
+	  	font-size: 32px;
+	  }
+	  @media (min-width: 1200px) {
+	  	margin-bottom: 9px;
+	  	font-size: 50px;
+	  	letter-spacing: .5px;
 	  }
 
 }
@@ -60,10 +100,21 @@
 	  }
 
 }
-
+.subtitleIn{
+	font-size: 16px;
+	line-height: 24px;
+	@media (min-width: 992px) {
+     font-size: 18px;
+     line-height: 26px;
+	}
+	@media (min-width: 1200px) {
+		font-size: 21px;
+		line-height: 30px;
+	}
+}
 
 .text{
-	line-height:28px;
+	line-height:22px;
 	font-size: 14px;
 	a{
 		color: $green;
@@ -73,7 +124,23 @@
 		color: $green;
 	}
 	@media (min-width: 992px) {
+		line-height:28px;
 		font-size: 18px;}
+
+}
+.textInter{
+	line-height:22px;
+	font-size: 14px;
+	a{
+		color: $green;
+	}
+	strong{
+		font-weight: 600;
+		color: $green;
+	}
+	@media (min-width: 992px) {
+		line-height:28px;
+		font-size: 16px;}
 
 }
 
@@ -93,6 +160,25 @@
 		@media (min-width: 1440px) {
 		line-height:24px;
 		font-size: 18px;}
+
+}
+
+.textSmall{
+	line-height:22px;
+	font-size: 12px;
+	a{
+		color: $green;
+	}
+	strong{
+		font-weight: 600;
+		color: $green;
+	}
+	@media (min-width: 1200px) {
+		line-height:24px;
+		font-size: 14px;}
+		@media (min-width: 1440px) {
+		line-height:24px;
+		font-size: 14px;}
 
 }
 
@@ -134,11 +220,14 @@
 .upper{
 	text-transform: uppercase;
 }
+.capitalize{
+	text-transform: capitalize !important;
+}
 
 //∆∆-color-∆∆//
 
 .ColorWhite{
-	color: white;
+	color: white !important;
 }
 .ColorRed{
 	color: $red !important;
@@ -149,7 +238,7 @@
 }
 
 .ColorBlack{
-	color: $black;
+	color: $black !important;
 }
 
 
@@ -169,6 +258,9 @@ background: transparent;
 .bgGrey{
 	background: $greyFont;
 }
+.bgGreyLight{
+	background: #e2e2e2;
+}
 
 .bgBlack{
 	background: $black !important;
@@ -180,15 +272,51 @@ background: transparent;
 
 
 
+// ∆∆ -dimesions
+.width100{
+	width: 100%;
+}
+
+.height100{
+	height: 100%;
+}
+
+.absolute{
+	position: absolute;
+}
+.relative{
+	position: relative;
+}
+.block{
+	display: block;
+}
+.inline-block{
+	display: inline-block;
+}
+.inline{
+	display: inline;
+}
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
 
 //∆∆-ul-∆∆//
+ul.defaultUl{
+	list-style: none;
+    @include cero;
+}
+ul.generalUl { 
+	list-style: none;
+	li { position: relative;
 
-ul.generalUl { list-style: none;
-	li { position: relative;}
+	    padding-left: 3%;
+	    text-indent: -.4em;
+	}
 
 	li:before {
-
-	    margin: -2px 4px 0 ;
 	    font-size: 10px;    
 	    vertical-align: middle;
 	    display: inline-block;
@@ -197,26 +325,37 @@ ul.generalUl { list-style: none;
 	}
 
 }
+ul.InUl {
+    list-style: none;
+    margin: 24px 0 72px;
+	padding-left: 36px;
+	li { position: relative;
+	    padding-left: 0;
+	    text-indent: -.4em;
+	    margin-bottom: 0;
+	}
+
+	li:before {
+	    font-size: 10px;    
+	    vertical-align: middle;
+	    display: inline-block;
+	    color: black;
+	    content: " 	●";
+	}
+}
 
 ol.greenUl {
 	@include cero;
 	list-style: none;
 	li { position: relative;}
-
 	li:before {
-
 	    margin: -2px 4px 0 ;
 	    font-size: 10px;    
 	    vertical-align: middle;
 	    display: inline-block;
-	 	 content: " ";
+	 	content: " ";
 	}
-
 }
-
-
-
-
 //∆∆-position-∆∆//
 .borderNone{
 	border: none;
@@ -224,14 +363,12 @@ ol.greenUl {
 
 .paddingTab{
 	padding: 54px 24px !important;
-		  @media (min-width: 992px) {
-		  		padding: 90px 24px !important;
-
-		  }
-		   @media (min-width:1600px) {
-		   	padding: 90px 124px !important;
-
-		   }
+	  @media (min-width: 992px) {
+	  		padding: 90px 24px !important;
+	 }
+	@media (min-width:1600px) {
+	   	padding: 90px 124px !important;
+	 }
 }
 
 .paddingTabTwo{
@@ -256,9 +393,6 @@ ol.greenUl {
 
      }
   } 
-
-
-
 
  .clear{
  	clear: both;

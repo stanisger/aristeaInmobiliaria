@@ -2,15 +2,33 @@ doctype html
 head
   meta(charset='utf-8')
   meta(http-equiv='X-UA-Compatible', content='IE=edge')
-  meta(name='viewport', content='width=device-width, initial-scale=1')
-  meta(name='description', content='')
-  meta(name='author', content='')
-  link(rel='shortcut icon', href='assets/ico/favicon.ico')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+  meta(name='description', content='Aristea Desarrollos')
+  meta(name='author', content='Aristea Desarrollos')
+  // † Favicon •••••••••
+  link(rel='apple-touch-icon', sizes='57x57', href='assets/favicon/apple-icon-57x57.png')
+  link(rel='apple-touch-icon', sizes='60x60', href='assets/favicon/apple-icon-60x60.png')
+  link(rel='apple-touch-icon', sizes='72x72', href='assets/favicon/apple-icon-72x72.png')
+  link(rel='apple-touch-icon', sizes='76x76', href='assets/favicon/apple-icon-76x76.png')
+  link(rel='apple-touch-icon', sizes='114x114', href='assets/favicon/apple-icon-114x114.png')
+  link(rel='apple-touch-icon', sizes='120x120', href='assets/favicon/apple-icon-120x120.png')
+  link(rel='apple-touch-icon', sizes='144x144', href='assets/favicon/apple-icon-144x144.png')
+  link(rel='apple-touch-icon', sizes='152x152', href='assets/favicon/apple-icon-152x152.png')
+  link(rel='apple-touch-icon', sizes='180x180', href='assets/favicon/apple-icon-180x180.png')
+  link(rel='icon', type='image/png', sizes='192x192', href='assets/favicon/android-icon-192x192.png')
+  link(rel='icon', type='image/png', sizes='32x32', href='assets/favicon/favicon-32x32.png')
+  link(rel='icon', type='image/png', sizes='96x96', href='assets/favicon/favicon-96x96.png')
+  link(rel='icon', type='image/png', sizes='16x16', href='assets/favicon/favicon-16x16.png')
+  link(rel='manifest', href='/manifest.json')
+  meta(name='msapplication-TileColor', content='#ffffff')
+  meta(name='msapplication-TileImage', content='/ms-icon-144x144.png')
+  meta(name='theme-color', content='#ffffff')
+  // † Font •••••••••
   link(href='https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i', rel='stylesheets')
   title Aristea Desarrollos
-  // Custom styles for this template
+  // † Styles for this template •••••••
   link(href='style.css', rel='stylesheet')
-  link(href='assets/css/font-awesome.min.css', rel='stylesheet')
+  
   // Just for debugging purposes. Don't actually copy this line!
   //if lt IE 9
     script(src='../../assets/js/ie8-responsive-file-warning.js')
@@ -19,28 +37,40 @@ head
     script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
     script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
   script(src='assets/js/modernizr.custom.js')
-// Fixed navbar
-.navbar.navbar-default.navbar-fixed-top.bgBlackOne(role='navigation')
-  .containerFluid
-    .navbar-header
-      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      a.navbar-brand(href='index.html')
-        img.with100(src='assets/img/logo.png', alt='')
-    .navbar-collapse.collapse.navbar-right
-      ul.nav.navbar-nav
-        li.active
-          a(href='desarrollos-inmobiliarios.html') DESARROLLO INMOBILIARIO 
-        li
-          a(href='comercializacion.html') COMERCIALIZACIÓN
-        li
-          a(href='contruccion.html') CONSTRUCCIÓN
-        li
-          a(href="quienes-soms")  ¿QUIÉNES SOMOS?
-        li
-          a(href="conatacto") CONTACTO
-    // /.nav-collapse
 body
+  // Fixed navbar 
+  .navbar.navbar-default.navbar-fixed-top.bgBlackOne(role='navigation')
+    .containerFluid.relative
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='/aristeaInmobiliaria/')
+          img.with100(src='assets/img/logo.png', alt='')
+      .navLenguaje.absolute
+        label.ColorRed.textSmall.thing.flaticon-worlwide-1
+        select.ColorRed.textSmall.transparent
+          option(value="Esp" id="esp") Esp 
+          option(value="Ing" id="ing") Ing  
+      .navbar-collapse.collapse.navbar-right
+        ul.nav.navbar-nav
+          li
+            a(href='/aristeaInmobiliaria/desarrollo-inmobiliario') DESARROLLO INMOBILIARIO 
+          li
+            a(href='/aristeaInmobiliaria/comercializacion') COMERCIALIZACIÓN
+          li
+            a(href='/aristeaInmobiliaria/construccion') CONSTRUCCIÓN
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='true') 
+             | Aristea
+             span.caret
+            ul.dropdown-menu
+              li
+                a(href='/aristeaInmobiliaria/somos') ¿quiénes somos?
+              li
+                a(href='/aristeaInmobiliaria/proyectos') Proyectos
+          li
+            a(href="/aristeaInmobiliaria/proyectos") CONTACTO
+      // /.nav-collapse

@@ -2,15 +2,32 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="shortcut icon" href="assets/ico/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Aristea Desarrollos">
+  <meta name="author" content="Aristea Desarrollos">
+  <!-- † Favicon •••••••••-->
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- † Font •••••••••-->
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheets">
   <title>Aristea Desarrollos</title>
-  <!-- Custom styles for this template-->
+  <!-- † Styles for this template •••••••-->
   <link href="style.css" rel="stylesheet">
-  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
   <!-- Just for debugging purposes. Don't actually copy this line!-->
   <!--if lt IE 9script(src='../../assets/js/ie8-responsive-file-warning.js')
   -->
@@ -21,105 +38,98 @@
   -->
   <script src="assets/js/modernizr.custom.js"></script>
 </head>
-<!-- Fixed navbar-->
-<div role="navigation" class="navbar navbar-default navbar-fixed-top bgBlackOne">
-  <div class="containerFluid">
-    <div class="navbar-header">
-      <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="" class="with100"></a>
+<body>
+  <!-- Fixed navbar -->
+  <div role="navigation" class="navbar navbar-default navbar-fixed-top bgBlackOne">
+    <div class="containerFluid relative">
+      <div class="navbar-header">
+        <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/aristeaInmobiliaria/" class="navbar-brand"><img src="assets/img/logo.png" alt="" class="with100"></a>
+      </div>
+      <div class="navLenguaje absolute">
+        <label class="ColorRed textSmall thing flaticon-worlwide-1"></label>
+        <select class="ColorRed textSmall transparent">
+          <option value="Esp" id="esp">Esp </option>
+          <option value="Ing" id="ing">Ing  </option>
+        </select>
+      </div>
+      <div class="navbar-collapse collapse navbar-right"> 
+        <ul class="nav navbar-nav">
+          <li><a href="/aristeaInmobiliaria/desarrollo-inmobiliario">DESARROLLO INMOBILIARIO </a></li>
+          <li><a href="/aristeaInmobiliaria/comercializacion">COMERCIALIZACIÓN</a></li>
+          <li><a href="/aristeaInmobiliaria/construccion">CONSTRUCCIÓN</a></li>
+          <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" class="dropdown-toggle">
+               
+              Negocios<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Inversionistas</a></li>
+              <li><a href="#">Terrenos</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" class="dropdown-toggle">
+              Aristea<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/aristeaInmobiliaria/somos">¿quiénes somos?</a></li>
+              <li><a href="/aristeaInmobiliaria/proyectos">Proyectos</a></li>
+            </ul>
+          </li>
+          <li><a href="/aristeaInmobiliaria/contacto">CONTACTO</a></li>
+        </ul>
+         <div class="navLenguajeSmall">
+          <label class="ColorRed textSmall thing flaticon-worlwide-1"> IDIOMA :</label>
+          <select class="ColorRed textSmall transparent thing ">
+            <option value="Esp" id="esp">ESPAÑOL </option>
+            <option value="Ing" id="ing">ENGLISH</option>
+          </select>
+        </div>
+      </div>
+      <!-- /.nav-collapse-->
     </div>
-    <div class="navbar-collapse collapse navbar-right">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="desarrollos-inmobiliarios.html">DESARROLLO INMOBILIARIO </a></li>
-        <li><a href="comercializacion.html">COMERCIALIZACIÓN</a></li>
-        <li><a href="contruccion.html">CONSTRUCCIÓN</a></li>
-        <li><a href="quienes-soms"> ¿QUIÉNES SOMOS?</a></li>
-        <li><a href="conatacto">CONTACTO</a></li>
-      </ul>
-    </div>
-    <!-- /.nav-collapse-->
   </div>
-</div>
-<body></body>
-<div id="carousel-example-generic" data-ride="carousel" class="carousel slide">
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-  </ol>
-  <div role="listbox" class="carousel-inner">
-    <div class="item active animated fadeInUp">
-      <h1 class="ColorWhite bold upper textCenter bgRed fadeInUp animated">aristea</h1>
-      <div class="clear"> </div>
-    </div>
-    <div class="item animated fadeInUp">
-      <h1 class="ColorWhite bold upper textCenter bgRed fadeInUp animated">aristea</h1>
-      <div class="clear">   </div>
-    </div>
-  </div>
-</div>
-<!--SectionOne-->
-<section class="one bgWhite">
-  <div class="groupTitle textCenter box">
-    <h2 class="subtitle light upper ColorRed">ACERCA DE</h2>
-    <h1 class="title upper bold ColorBlack">NOSOTROS	</h1>
-  </div>
-  <div class="text light colorBlack textCenter">Aristea Desarrollos es una empresa diseñada para proporcionar servicios integrales para la ejecución de <br>proyectos inmobiliarios. </div>
-  <div class="text light colorBlack textCenter">Contamos con más de 30 años de experiencia en el sector, elaborando sólidas estrategias de bienes raíces <br>en vivienda, desarrollos comerciales y corporativos.</div>
-  <div class="text light colorBlack textCenter">Ofrecemos soluciones basándonos en 3 pilares: <br>Gestión Inmobiliaria <br>Dirección de construcción <br>Comercialización de los proyectos.. </div>
-  <div class="text light colorBlack textCenter">Estamos orgullosos de proporcionar a nuestros clientes e inversionistas soluciones exitosas en el sector</div>
-</section>
-<section class="second relative">
-  <article>
-    <div class="groupTitle textCenter boxRed">
-      <h2 class="subtitle light upper ColorWhite">DESARROLLO</h2>
-      <h1 class="titleMedium upper bold ColorBlack">INMOBILIARIO</h1>
-    </div>
-    <p class="text ColorWhite light"> La gestión inmobiliaria comprende 3 grandes rubros:armado, operación y cierre del proyecto</p>
-  </article>
-</section>
-<section class="third">
-  <article></article>
-</section>
-<section class="fourt">
-  <article></article>
-</section>
-<!--
-*****************************************************************************************************************
-FOOTER
-*****************************************************************************************************************
--->
+</body>
+<div id="content"></div>
+<!--† Footer •••••••••-->
+
 <footer id="footerwrap" class="bgBlackOne relative">
+  <div class="menuLinkSmall">
+      <article>
+       <i class="flaticon-handshake ColorBlack"></i>
+        <div class="text"><span class="upper bold ColorWhite block">inversionistas</span><a href="#" class="ColorWhite thing">ver más ></a></div>
+      </article>
+      <article><i class="flaticon-albums ColorBlack"></i>
+        <div class="text"><span class="upper bold ColorWhite block">terrenos</span><a href="#" class="ColorWhite block thing">ver más >  </a></div>
+      </article>
+    </div>
   <div class="containerFluid">
     <div class="row">
       <div class="col-sm-3 logoFooter"><a href="index.html" class="navbar-brand"></a><img src="assets/img/logo.png" alt="" class="with100"></div>
       <div class="col-sm-2">
-        <h4 class="upper ColorRed light">ubicación</h4>
+        <h4 class="upper ColorRed regular">ubicación</h4>
         <p class="regular ColorGrey textfoot">
-          Tenancingo 36 Col. Condesa <br>
-          Del. Cuautémoc C.P 06140 <br>
-          Ciudad de México. 
+          Avenida 2 # 28 Despacho 8,<br>
+          Colonia San Pedro de los Pinos,  <br>
+          Delegación Benito Juárez, CP 03800 
         </p>
       </div>
       <div class="col-sm-3">
-        <h4 class="upper ColorRed light">contacto</h4>
-        <p class="regular ColorGrey textfoot"><a href="mailto:contacto@aristea.com.mx" class="light ColorGrey">mailto:contacto@aristea.com.mx <br></a>(55) 55 545657</p>
+        <h4 class="upper ColorRed regular">contacto</h4>
+        <p class="regular ColorGrey textfoot"><a href="mailto:contacto@aristea.com.mx" class="light ColorGrey">contacto@aristea.com.mx <br></a>(55) 55 545657</p>
       </div>
-      <div class="col-sm-4"><br><br>
-        <h4 class="ColorWhite thing textfoot">ARISTEA todos los derechos reservados 2016</h4>
+      <div class="menuLink">
+        <article> <i class="flaticon-handshake ColorBlack"></i>
+          <div class="text"><span class="upper regular ColorWhite block">inversionistas</span><a href="#" class="ColorWhite thing">ver más ></a></div>
+        </article>
+        <article><i class="flaticon-albums ColorBlack"></i>
+          <div class="text"><span class="upper regular ColorWhite block">terrenos</span><a href="#" class="ColorWhite block thing">ver más >  </a></div>
+        </article>
       </div>
     </div>
   </div>
 </footer>
-<!--
-Bootstrap core JavaScript
-==================================================
--->
-<!-- Placed at the end of the document so the pages load faster-->
+<hr class="fooot">
+<div class="legals text thing text-center ColorWhite "> <strong class="ColorWhite">ARISTEA</strong> Todos los derechos reservados 2017.</div><br>
+<!--†† Scripts •••••••••-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/retina-1.1.0.js"></script>
-<script src="assets/js/jquery.hoverdir.js"></script>
-<script src="assets/js/jquery.hoverex.min.js"></script>
-<script src="assets/js/jquery.prettyPhoto.js"></script>
-<script src="assets/js/jquery.isotope.min.js"></script>
-<script src="assets/js/custom.js"></script>
+<script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"> </script>
 <script src="assets/js/main.js"></script>

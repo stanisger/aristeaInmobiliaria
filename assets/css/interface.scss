@@ -1,6 +1,8 @@
 body{
     font-family: 'Roboto', sans-serif !important;
      overflow-x: hidden; 
+         -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .navbar{
 	-webkit-box-shadow: 1px 1px 10px -2px rgba(0,0,0,0.28);
@@ -14,18 +16,30 @@ body{
 	// ∆∆- logotipo -∆∆
 	.navbar-brand{
 			width: 120px;
+			position: relative;
+			z-index: 1;
 			@media (min-width: 992px) {
 				width: 200px;
 
 			}
 	}
-	// ∆∆- ul collapse menu -∆∆
+	//†∆∆- ul collapse menu -∆∆†
 	.navbar-collapse{
-		background:rgba( $bgBlack, .92);
+		background:rgba( $bgBlack, 1);
 		margin-top: 22px;
 		border-top: none;
+		max-height: inherit;
 		@media (min-width: 768px) {
-			margin-top: 0px;
+			margin-top: -18px;
+			padding-left: 9px;
+			padding-bottom: 5px;
+
+		}
+		@media (min-width: 992px) {
+			width: initial;
+			margin-top: 0;
+
+
 		}
 
 	}
@@ -50,7 +64,7 @@ body{
 	// body to menu
 	.nav.navbar-nav{
 		vertical-align: middle;
-		margin-top: 36px;
+		margin-top: 54px;
 		li{
 			a{
 				font-size: 14px;
@@ -62,22 +76,27 @@ body{
 					color: $red;
 				}
 				@media (min-width: 768px) {
-					padding: 9px;
-					font-size: 10px;
+					padding: 7px;
+					font-size: 11px;
 
 				}
-				@media (min-width: 992px) {
-					padding: 12px;
+				@media (min-width: 998px) {
+					padding: 9px;
+					font-size: 11px;
+
+				}
+				@media (min-width: 1180px) {
+					padding: 10px 18px;
 					font-size: 12px;
 
 				}
-				@media (min-width: 1200px) {
+				@media (min-width: 1280px) {
 					font-size: 14px;
 				}
 			}
 		}
 			.active{
-				a{
+				a, a:hover{
 					color: $red;
 					position: relative;
 					padding-bottom: 8px;
@@ -94,6 +113,24 @@ body{
 				}
 			}
 
+
+			// ††† Drop down menu 
+			.dropdown-menu {
+				margin-top: 20px;
+				background: $black;
+				padding: 0;	
+				@media ( max-width : 992px){
+					margin-top: 5px;
+				}
+				@media( max-width: 768px){
+					background: rgba( white, .08 );
+					a:hover{
+						color: white !important;
+ 
+					}
+				}
+			}
+ 
 	}
 
 }
@@ -105,9 +142,26 @@ h1,h2,h3,h4,h6{
 
 // ∆∆- Eyectacher -∆∆
 .carousel-indicators{
-	top: 0;
-	bottom: 0;
-	margin: 0 auto;
+	left: inherit;
+    width: 10%;
+    margin-left: 0;
+    right: -14px;
+    top: 34%;
+	li{
+		display: block;
+		border: none;
+		margin: 9px 0;
+		background: white;
+	}
+	li.active{
+		background: $red;
+		margin: 9px 0;
+	}
+	@media (min-width: 992px) {
+		 right: -64px;
+
+
+	}
 }
 .carousel-inner{
 	background: $bgBlack;
@@ -127,6 +181,7 @@ h1,h2,h3,h4,h6{
 		@media (min-width: 1440px) {
 		   height: 85vh;
 	       min-height: 680px;
+	       max-height: 850px;
 
 		}
 
@@ -149,8 +204,9 @@ h1,h2,h3,h4,h6{
 		h1{
 			@include cero;
 			padding: 12px 18px;
-		    letter-spacing: 8px;
-		    width: 243px;
+			border-radius: 9px;
+		    // letter-spacing: 8px;
+		    width: 201px;
 		    height: 57px;
 		    font-size: 33px;
 			position: absolute;
@@ -161,15 +217,15 @@ h1,h2,h3,h4,h6{
 			@media (min-width: 768px) {
 				    padding: 12px 18px;
 				    letter-spacing: 8px;
-				    width: 343px;
+				    width: 338px;
 				    height: 88px;
 				    font-size: 63px;
 
 			}
 			@media (min-width: 1200px) {
 			padding: 12px 18px;
-			letter-spacing: 18px;
-			width: 474px;	
+			// letter-spacing: 18px;
+			width: 458px;	
 			height: 110px;
 			font-size: 79px;
 
@@ -188,6 +244,35 @@ h1,h2,h3,h4,h6{
 }
 
 footer{
+	.menuLinkSmall{
+		position: inherit;
+	    width: 100%;
+	    height: auto;
+    
+        background: $red;
+        @include flexFlow;
+        text-align: center;
+        article{
+        	padding: 18px;
+        	width: 50%;
+        	 @include flexFlow;;
+        	 i{
+        	 	width: 20%;
+        	 	margin-right: 12px;
+        	 	color: white;
+        	 	font-style: normal;
+        	 	font-size: 2.1em;
+
+        	 }
+        }
+        article:nth-child(1){
+        	border-right: 1px solid rgba( white, .3);
+        }
+        @media (min-width: 768px){
+        	display: none;
+        }
+
+	}
 	z-index: 2;
 	position: relative;
 	margin-top: -118px;
@@ -215,4 +300,122 @@ footer{
 
 		}
 	}
+.menuLink{
+		position: inherit;
+	    width: 100%;
+	    height: 120px;
+        padding: 1% 5%;
+        background: $red;
+		display: none;
+        article{
+        	width: 50%;
+        	height: 90px;
+        	 @include flexFlow;
+        	 	i{ 
+        	 		width: 100%;
+        	 		text-align: center;
+        	 		font-style: normal;
+        	 		font-size: 3em !important;
+        	 		@media (min-width: 1200px){
+        	 			width: 30%;
+        	 			font-size: 3em !important;
+        	 		}
+        	 		@media (min-width: 1500px){
+        	 			font-size: 3.8em !important;
+        	 		}
+
+        	 	}
+        	 	.text{
+        	 		width: 100%;
+        	 		font-size: 12px;
+        	 		line-height: 12px;
+        	 		text-align: center;
+        	 		span{
+        	 			// line-height: 16px;
+        	 			// margin-top: 24px;
+        	 			padding-right: 0;
+        	 		}
+        	 		@media (min-width: 1200px){
+        	 			width: 70%;
+        	 			font-size: 14px;
+        	 			line-height: 24px;
+        	 			text-align: left;
+        	 			margin-top: 20px;
+        	 		}
+        	 		@media (min-width: 1500px){
+        	 			font-size: 16px;
+
+        	 		}
+
+        	 	}
+        	 }
+        	  @media (min-width: 768px){
+        	  	     @include flexFlow;
+        	  	 background: none;
+                  position: absolute;
+				    width: 40%;
+				    right: -33px;	
+				    background-image: -webkit-linear-gradient(199deg, #b4072a 86%, transparent 21%);
+                   background-image: -moz-linear-gradient(199deg, #b4072a 86%, transparent 21%);
+        	  }
+        	  @media (min-width: 992px){
+        	  	 // width: 413px;
+        	  }
+        	  @media (min-width: 1200px){
+        	  	// width: 590px;
+        	  	height: 123px;
+        	  	padding: 2% 6%;
+
+        	  }
+
+        	 @media (min-width: 1640px){
+        	 	right: 0px;
+                padding: 1.2% 6%;
+        	     background-image: -webkit-linear-gradient(209deg, $red 90%, transparent 90%);
+                background-image: -moz-linear-gradient(209deg, $red 90%, transparent 90%);
+        	 }
+	   }
 }
+	   hr.fooot{
+	   	width: 100%;
+	   	 	display: inherit;
+	   	 	opacity: .4;
+	   }
+.legals{
+	color: rgba( $greyBg, .8);
+}
+.navLenguajeSmall{
+	padding: 20px 0;
+	text-align: center;
+	border-top: 1px solid rgba($red, .4);
+	select{
+		width: 25%;
+		height: 30px;
+		border: 0;
+	}
+	@media(min-width: 768px){
+		display: none;
+	}
+}
+.navLenguaje{
+	right: 18px;
+	top: 9px;
+	display:none;
+	label{
+		margin-right: 9px;
+		font-size: 16px;
+	}
+	select{
+		border: 1px solid $red;
+	}
+	@media(min-width: 768px){
+		display: inherit;
+
+	}
+	@media(min-width: 992px){
+		top: 18px;
+	}
+}
+
+
+

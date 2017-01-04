@@ -1,28 +1,26 @@
+// ∆∆ One section
 .one{
 	margin-top:-86px;
-	padding: 15% 7%;
-
+	padding: 15% 7% 22%;
 	.groupTitle{
-		 width: 220px;
-		 transform:skew(0deg, 5deg);
+		width: 220px;
+		transform:skew(0deg, 5deg);
 		-ms-transform:skew(0deg, 10deg);
 		-webkit-transform:skew(0deg, 5deg); 
 		margin-bottom: 28px;
 		h2{
 			margin-top: -20px; 
 		}
-	   h1{
-	      margin: 10px 0 20px;
-	   }
-	   @media (min-width: 768px) {
-	   	 width: 300px;
-
-	   }
-	    @media (min-width: 992px) {
-	   	 width: 360px;
-	   	 margin-bottom: 54px;
-
-	   }
+		h1{
+			margin: 10px 0 20px;
+		}
+		@media (min-width: 768px) {
+			width: 300px;
+		}
+		@media (min-width: 992px) {
+			width: 360px;
+			margin-bottom: 54px; 
+		}
 	}
 	:nth-child(2),:nth-child(3){
 		br{
@@ -32,26 +30,23 @@
 			}
 		}
 	}
-	.text{
+	.text, .subtitle{
 		margin-top: 18px;
-		 transform:skew(0deg, 5deg);
+		transform:skew(0deg, 5deg);
 		-ms-transform:skew(0deg, 10deg);
 		-webkit-transform:skew(0deg, 5deg); 
 	}
-	transform:skew(0deg,-5deg);
-	-ms-transform:skew(0deg,-10deg);
-	-webkit-transform:skew(0deg,-5deg); 
-
+		transform:skew(0deg,-5deg);
+		-ms-transform:skew(0deg,-10deg);
+		-webkit-transform:skew(0deg,-5deg); 
 	@media (min-width: 768px) {
-		padding: 10% 0;
-
+		padding: 10% 0 20%;
 	}
 	@media (min-width: 1200px) {
-			padding: 7% 0;
-
+		padding: 7% 0 15%;
 	}
-}
-
+} //††ENd
+// ∆∆ One section
 .second{
 	height:882px;
 	width: 100%;
@@ -59,6 +54,7 @@
 	-ms-transform:skew(0deg, 10deg);
 	-webkit-transform:skew(0deg, 4deg); 
 	overflow: hidden;
+	margin-top: -153px;
 	@include cover;
 	background:  url(assets/img/bgArticleOne.jpg) center; 
 		article{
@@ -80,6 +76,7 @@
 	  }
 	  @media (max-width: 992px) {
 	  	height:582px;
+	  	margin-top: -90px;
 	  	article{
 	  		width: 64%;
 	  	}
@@ -88,9 +85,18 @@
 
 	   @media (max-width: 768px) {
 	  	height:482px;
+	  		margin-top: -60px;
 	  	article{
-	  		width: 74%;
+	  		width: 75%;
 	  	}
+	  }
+	  @media (max-width: 460px) {
+	  	background: $red;
+	  	margin-top: -40px;
+	  	article{
+	  		width: 115%;
+	  	}
+
 	  }
     .groupTitle{
     	width: 400px;
@@ -105,17 +111,16 @@
 			margin-top: -20px;
 		}
 		h1{
-			margin: 20px 0;
+			margin: 10px 0;
 		}
 		@media (max-width: 992px) {
 	         	width: 220px;
-	         	right: 10%;
 				top: 15%;
 
 	         }
 	         @media (max-width: 768px) {
 	         	width: 220px;
-	         	right: 15%;
+	         	right: 0px;
 				top: 15%;
 
 	         }
@@ -128,34 +133,59 @@
 			      	}
 		      }
     }
+    
   	p{
   		text-align: right;
   		transform:skew(-22deg, -4deg);
 		-ms-transform:skew(-10deg, 0deg);
 		-webkit-transform:skew(-22deg, -4deg); 
 		position: absolute;
-		top: 320px;
-		width: 380px;
-		right: 8%;
-		@media (max-width: 992px) {
-			right: 17%;
-			width: 220px;
-			top: 190px;
+		top: 160px;
+		padding-left: 127px;
+		 @media (min-width: 420px) {
+		 	right: 20px;
+		 	top: 180px;
+		 	padding-left: 15%;
+		 }
+		 @media (min-width: 768px) {
+		 	top: 220px;
+		 	right: 75px;
+		 }
+		 @media (min-width: 992px) {
+		 	top: 300px;
+		 	right: 85px;
+		 }
 
-		}
-		@media (max-width: 768px) {
-			right: 22%;
-			width: 60%;
-			top: 170px;
-		}
-		@media (max-width: 420px) {
-		      	width: 220px;
-		      	right:0;
-		      	top: 160px; 
-		      	h1{
-		      		margin: 10px 0;
-		      	}
-	      }
+		 @media (min-width: 1200px) {
+		 	top: 370px;
+		 	right: 130px;
+		 	padding-left: 16%;
+		 }
+		  @media (min-width: 1600px) {
+		  	padding-left: 33%;
+		  }
+  	}
+  	a{
+  		position: absolute;
+		top: 260px;
+		right: 36px;
+		@media (min-width: 420px) {
+		 	right: 40px;
+		 	top: 260px;
+		 }
+		 @media (min-width: 768px) {
+		 	top: 290px;
+		 	right: 100px;
+		 }
+		 @media (min-width: 992px) {
+		 	top: 410px;
+		 	right: 140px;
+		 }
+
+		 @media (min-width: 1200px) {
+		 	top: 500px;
+    		right: 183px
+		 }
   	}
 
 }
@@ -174,7 +204,6 @@
 	article{
 		width: 54%;
 		height: 110%;
-		background: black;
 		float: left;
 		transform:skew(-22deg, 0deg);
 		-ms-transform:skew(10deg, 0deg);
@@ -203,6 +232,126 @@
 	  	}
 
 	  }
+	   @media (max-width: 460px) {
+	  	article{
+	  		width: 115%;
+	  	}
+
+	  }
+	   .groupTitleSmall{
+    	width: 390px;
+    	transform:skew(22deg, 3deg);
+		-ms-transform:skew(-10deg, 0deg);
+		-webkit-transform:skew(22deg, 3deg); 
+		margin: 0 auto;
+		position: absolute;
+		left: 7%;
+		top: 20%;
+		h1{
+			margin: 10px 0;
+		}
+		@media (max-width: 992px) {
+	         	width: 220px;
+				top: 15%;
+
+	         }
+	         @media (max-width: 768px) {
+	         	width: 180px;
+	         	left: 0px;
+				top: 15%;
+
+	         }
+			      @media (max-width: 420px) {
+			      	width: 150px;
+			      	left: -36px;
+			      	top: 15%; 
+			      	h1{
+			      		margin: 10px 0;
+			      	}
+		      }
+    }
+	  .groupTitle{
+    	width: 490px;
+    	transform:skew(22deg, 3deg);
+		-ms-transform:skew(-10deg, 0deg);
+		-webkit-transform:skew(22deg, 3deg); 
+		margin: 0 auto;
+		position: absolute;
+		left: 7%;
+		top: 20%;
+		h1{
+			margin: 10px 0;
+		}
+		@media (max-width: 992px) {
+	         	width: 300px;
+				top: 15%;
+
+	         }
+	         @media (max-width: 768px) {
+	         	width: 300px;
+	         	left: 0px;
+				top: 15%;
+
+	         }
+			      @media (max-width: 420px) {
+			      	width: 300px;
+			      	left: -36px;
+			      	top: 15%; 
+			      	h1{
+			      		margin: 10px 0;
+			      	}
+		      }
+    }
+  	p{
+  		text-align: left;
+  		transform:skew(22deg, 3deg);
+		-ms-transform:skew(-10deg, 0deg);
+		-webkit-transform:skew(22deg, 3deg); 
+		position: absolute;
+		top: 160px;
+		padding-right: 26%;
+		 @media (min-width: 420px) {
+		 	left: 20px;
+		 	top: 160px;
+		 	padding-right: 15%;
+		 }
+		 @media (min-width: 768px) {
+		 	top: 190px;
+		 	left: 75px;
+		 }
+		 @media (min-width: 992px) {
+		 	top: 250px;
+		 	left: 85px;
+		 }
+
+		 @media (min-width: 1200px) {
+		 	top: 330px;
+		 	left: 130px;
+		 	padding-right: 34%;
+		 }
+  	}
+  	a{
+  		position: absolute;
+		top: 260px;
+		left: 36px;
+		@media (min-width: 420px) {
+		 	left: 54px;
+		 	top: 260px;
+		 }
+		 @media (min-width: 768px) {
+		 	top: 290px;
+		 	left: 120px;
+		 }
+		 @media (min-width: 992px) {
+		 	top: 390px;
+		 	left: 140px;
+		 }
+
+		 @media (min-width: 1200px) {
+		 	top: 470px;
+    		left: 183px
+		 }
+  	}
 
 
 }
@@ -214,8 +363,8 @@
 	-webkit-transform:skew(0deg, 4deg); 
 	overflow: hidden;
 	@include cover;
-	margin-top: -118px;
 	background:  url(assets/img/bgArticleThird.jpg) center; 
+	margin-top: -118px;
 		article{
 		width: 54%;
 		height: 110%;
@@ -248,4 +397,100 @@
 	  	}
 
 	  }
+	  @media (max-width: 460px) {
+	  	height:482px;
+	  	background:  $greyBg; 
+
+	  	article{
+	  		width: 114%;
+	  	}
+
+	  }
+	  .groupTitle{
+    	width: 400px;
+    	transform:skew(-22deg, -4deg);
+		-ms-transform:skew(-10deg, 0deg);
+		-webkit-transform:skew(-22deg, -4deg); 
+		margin: 0 auto;
+		position: absolute;
+		right: 7%;
+		top: 20%;
+		h1{
+			margin: 10px 0;
+		}
+		@media (max-width: 992px) {
+	         	width: 220px;
+				top: 15%;
+
+	         }
+	         @media (max-width: 768px) {
+	         	width: 220px;
+	         	right: 0px;
+				top: 15%;
+
+	         }
+			      @media (max-width: 420px) {
+			      	width: 220px;
+			      	right: -36px;
+			      	top: 15%; 
+			      	h1{
+			      		margin: 10px 0;
+			      	}
+		      }
+    }
+  	p{
+  		text-align: right;
+  		transform:skew(-22deg, -4deg);
+		-ms-transform:skew(-10deg, 0deg);
+		-webkit-transform:skew(-22deg, -4deg); 
+		position: absolute;
+		top: 160px;
+		padding-left: 127px;
+		 @media (min-width: 420px) {
+		 	right: 20px;
+		 	top: 180px;
+		 	padding-left: 15%;
+		 }
+		 @media (min-width: 768px) {
+		 	top: 220px;
+		 	right: 75px;
+		 }
+		 @media (min-width: 992px) {
+		 	top: 300px;
+		 	right: 85px;
+		 }
+
+		 @media (min-width: 1200px) {
+		 	top: 370px;
+		 	right: 130px;
+		 	padding-left: 16%;
+		 }
+		  @media (min-width: 1600px) {
+		 	padding-left: 33%;
+		 }
+  	}
+  	a{
+  		position: absolute;
+		top: 260px;
+		right: 36px;
+		@media (min-width: 420px) {
+		 	right: 40px;
+		 	top: 260px;
+		 }
+		 @media (min-width: 768px) {
+		 	top: 290px;
+		 	right: 100px;
+		 }
+		 @media (min-width: 992px) {
+		 	top: 410px;
+		 	right: 140px;
+		 }
+
+		 @media (min-width: 1200px) {
+		 	top: 500px;
+    		right: 183px
+		 }
+  	}
 }
+
+
